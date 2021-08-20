@@ -42,6 +42,16 @@ class MainActivity : AppCompatActivity() {
             
         }
 
+        studentListView.setOnItemLongClickListener { adapterView, view, position, l ->
+
+            val clickedStudent = mStudentList[position]
+
+            Toast.makeText(this, "${clickedStudent.name} 길게 눌림", Toast.LENGTH_SHORT).show()
+
+            return@setOnItemLongClickListener true
+
+        }
+
     }
 
 
