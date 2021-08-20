@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             
             val clickedStudent = mStudentList[position]
 
-            Toast.makeText(this, "${clickedStudent.name}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "${clickedStudent.name} (${clickedStudent.getKoreanAgeByYear(2021)}세)", Toast.LENGTH_SHORT).show()
             
         }
 

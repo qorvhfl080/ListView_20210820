@@ -36,7 +36,7 @@ class StudentAdapter(val mContext: Context,
         val addressTxt = row.findViewById<TextView>(R.id.addressTxt)
 
         nameTxt.text = data.name
-        ageTxt.text = "${(2021 - data.birthYear + 1)}세"
+        ageTxt.text = "${data.getKoreanAgeByYear(2021)}세"
         addressTxt.text = data.address
 
         return row
